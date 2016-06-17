@@ -10,8 +10,7 @@ title: About
 </p>
 
 ## Contact
-Find me on gitub here - www.github.com/braindeadpool
-
-Have questions or suggestions? Feel free to [ask me on Twitter](https://twitter.com/wavybrain).
+Find me on <a href="https://github.com/braindeadpool">GitHub</a> or <a href="https://twitter.com/wavybatman">Twitter</a>
+Reach me at <a href="mailto:brain.deadpool@gmail.com">brain.deadpool@gmail.com</a>
 
 Thanks for reading!
