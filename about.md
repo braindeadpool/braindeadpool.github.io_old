@@ -10,7 +10,7 @@ title: About
 </p>
 
 ## Contact
-Find me on <a href="https://github.com/braindeadpool">GitHub</a> or <a href="https://twitter.com/wavybatman">Twitter</a>
+Find me on <a href="https://github.com/braindeadpool">GitHub</a> or <a href="https://twitter.com/wavybatman">Twitter</a> <br/>
 Reach me at <a href="mailto:brain.deadpool@gmail.com">brain.deadpool@gmail.com</a>
 
 Thanks for reading!
