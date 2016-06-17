@@ -3,9 +3,9 @@
 permalink:           pretty
 
 # Setup
-title:               BrainDeadpool
-tagline:             'Personal webpage'
-description:         'Jekyll design by http://lanyon.getpoole.com'
+title:               braindeadpool
+tagline:             'personal webpage'
+description:         'design by http://lanyon.getpoole.com'
 url:                 http://www.braindeadpool.com
 baseurl:             ''
 paginate:            5
@@ -14,7 +14,7 @@ paginate:            5
 author:
   name:              Bruce Wilson
   url:               https://twitter.com/braindeadpool
-  email:             braindeadpool@gmail.com
+  email:             brain.deadpool@gmail.com
 
 # Custom vars
 version:             1.0.0
