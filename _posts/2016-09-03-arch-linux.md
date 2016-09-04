@@ -40,6 +40,10 @@ Here's the modified config file for GTwifi.
     'phase2="auth=MSCHAPv2"'
     )
 
+**NOTE** that `wlp1s0` is the name of my wireless interface - remember to replace it with the one on your pc. You can find yours with 
+    
+    iw dev 
+
 Now restart GTwifi (just in case `netctl` tried running it already).
 
     netctl stop GTwifi
