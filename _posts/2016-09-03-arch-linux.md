@@ -13,17 +13,17 @@ As an alternative you could create one by selecting one of the available network
 `wifi-menu -o`.
 Note that this would create a file called `/etc/netctl/<ssid_of_your_network>`.
 
-Now we need to configure the `GTwifi` profile by editing the file. In my case I needed to setup a *wpa-enterprise* connection, so I copied the boilerplate configuration from  `/etc/netctl/examples/wireless-wpa-configsection` to `/etc/netctl/GTwifi`.
+Now we need to configure the `GTwifi` profile by editing the file. In my case I needed to setup a *wpa-enterprise* connection, so I copied the boilerplate configuration from  `/etc/netctl/examples/wireless-wpa-configsection` to `/etc/netctl/GTwifi`
 
     cat /etc/netctl/examples/wireless-wpa-configsection > /etc/netctl/GTwifi
 
 *Check out the `/etc/netctl/examples/` directory for other configuration examples.*
 
-Now to modify the profile to suit GaTech wifi settings.
+Now to modify the profile to suit GaTech wifi settings
     
     nano /etc/netctl/GTwifi
 
-Here's the modified config file for GTwifi.
+Here's the modified config file for GTwifi
 
     Description='GTwifi'
     Interface='wlp1s0'
@@ -44,7 +44,7 @@ Here's the modified config file for GTwifi.
     
     iw dev 
 
-Now restart GTwifi (just in case `netctl` tried running it already).
+Now restart GTwifi (just in case `netctl` tried running it already)
 
     netctl stop GTwifi
     netctl start GTwifi
