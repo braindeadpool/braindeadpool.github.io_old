@@ -12,6 +12,7 @@ As part of the [second assignment](http://www.cc.gatech.edu/~hays/compvision/pro
 However, one thing that was unclear to me was how the eigenvalues of the Harris matrix lets us ascertain whether a good interest point(corner) has been found. Intuitively, you have a corner if the image intensity changes rapidly in both $$x$$ and $$y$$ directions as you move the window. And it seems this change in intensity(gradient) along the $$x$$ and $$y$$ directions somehow correspond to the eigenvalues of the Harris matrix - is there an intuitive way of understanding this relation?
 
 In trying to figure it out, I did dig up some stuff online that helped me out understand eigenvalues and eigenvectors better:
+
 * [math.stackexchange to the rescue](http://math.stackexchange.com/questions/243533/how-to-intuitively-understand-eigenvalue-and-eigenvector)
 * [dsp.stackexchange saves the day](http://dsp.stackexchange.com/questions/10104/why-eigenvalues-concerned-in-harris-corner-detection)
 
