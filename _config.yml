@@ -20,13 +20,13 @@ tagline:             'personal webpage'
 description:         'braindeadpool!'
 url:                 http://www.braindeadpool.com
 baseurl:             
-paginate:            5
+paginate:            3
 
 # About/contact
 author:
-  name:              Bruce Wilson
+  name:              Suraj M S
   url:               https://twitter.com/braindeadpool
-  email:             brain.deadpool@gmail.com
+  email:             braindeadpool@gmail.com
 
 # Custom vars
 version:             1.0.0
