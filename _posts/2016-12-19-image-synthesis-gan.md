@@ -45,6 +45,6 @@ Here are some wonderful resources to get started on understanding GAN and relate
 * A very nice blog post by OpenAI on generative models which cover GAN - [https://openai.com/blog/generative-models/](https://openai.com/blog/generative-models/)
 * A short and easy to follow blog post (with tensorflow code) - [http://blog.aylien.com/introduction-generative-adversarial-networks-code-tensorflow/](http://blog.aylien.com/introduction-generative-adversarial-networks-code-tensorflow/)
 * The original paper by Goodfellow et al. - [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661)
-* A great blog post and code by Brandon Amos - http://bamos.github.io/2016/08/09/deep-completion/#step-1-interpreting-images-as-samples-from-a-probability-distribution
+* A great [blog post](http://bamos.github.io/2016/08/09/deep-completion/#step-1-interpreting-images-as-samples-from-a-probability-distribution) and code by Brandon Amos
 
 
