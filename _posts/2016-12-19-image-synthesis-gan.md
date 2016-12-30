@@ -19,6 +19,7 @@ We batch train the model to maximize the following:
 * $$ s_f $$ - Discriminator score when fed a fake image with correct attributes
 
 and to minimize the following:
+
 * $$ s_r $$ - Discriminator score when fed a real image with correct attributes
 
 by setting the discriminator loss function to
