@@ -14,6 +14,7 @@ I decided to implement a similar GAN myself which takes in scene/object attribut
 The generator network takes in a 1x102 binary vector representing which attributes are present and which are not. I decided to forgo the fully convolutional network based description compression (used in the original paper to transform the text description to a fixed dimension compressed space) since the number of attributes we have are fixed in size.
 
 We batch train the model to maximize the following:
+
 * $$ s_w $$ - Discriminator score when fed a real image but incorrect attributes
 * $$ s_f $$ - Discriminator score when fed a fake image with correct attributes
 
@@ -39,6 +40,7 @@ The source code is available on github - [http://www.github.com/braindeadpool/im
 
 
 Here are some wonderful resources to get started on understanding GAN and related stuff:
+
 * A very nice blog post by OpenAI on generative models which cover GAN - [https://openai.com/blog/generative-models/](https://openai.com/blog/generative-models/)
 * A short and easy to follow blog post (with tensorflow code) - [http://blog.aylien.com/introduction-generative-adversarial-networks-code-tensorflow/](http://blog.aylien.com/introduction-generative-adversarial-networks-code-tensorflow/)
 * The original paper by Goodfellow et al. - [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661)
