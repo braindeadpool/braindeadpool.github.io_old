@@ -11,3 +11,7 @@ GAN model
 ---------
 Here's a visualization generated with [Tensorboard](https://www.tensorflow.org/versions/master/how_tos/summaries_and_tensorboard/)
 ![GAN visualization]({{ site.baseurl }}/public/ganmodel1_tensorboard.png)
+
+Results and Analysis
+--------------------
+To be filled
