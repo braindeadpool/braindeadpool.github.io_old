@@ -45,20 +45,21 @@ The discriminator is trained on two sets of images -
 
 Before describing the networks further, let us define some terms:
 * Discriminator accuracy $$S_D$$- a score lying in [-1, 1] range which indicates how accurately the discriminator detects the attributes present in the image. 
-Let $$O^{\ast}$$ be the correct attribute label vector for an input image and $$O$$ be the disciriminator predicted attribute vector. We compute the discriminator accuracy as
+Let $$O^{\ast}$$ be the correct attribute label vector for an input image and $$O$$ be the disciriminator predicted attribute vector. One way to compute the discriminator accuracy is
 
 $$ S_D = \frac{\sum_{i=1}^{102} 2 (o_i \equiv o^{\ast}_i) - 1}{102} $$  
 
 Thus for each attribute correctly predicted we add $$\frac{+1}{102}$$ to the score and for each incorrectly predicted we add $$\frac{-1}{102}$$ to the score.
 
-* Generator accuracy $$S_G$$ - a score lying in [-1, 1] range which indicates how good is the synthesized image according to the discriminator. Let $$A$$ be the input attribute vector to the generator and let $$O$$ be the discriminator ouput when it is fed the output from the generator. Then
+* Generator accuracy $$S_G$$ - a score lying in [-1, 1] range which indicates how good is the synthesized image according to the discriminator. Let $$A$$ be the input attribute vector to the generator and let $$O$$ be the discriminator ouput when it is fed the output from the generator. Then, similar to $$S_D$$ we can compute $$S_G$$ as
 
-$$ S_G = \frac{\sum_{i=1}^{102} 2 (a_i \equiv o_i) - 1}{102} $$  
+$$ S_G = \frac{\sum_{i=1}^{102} 2 (a_i \equiv o_i) - 1}{102} $$
 
-The idea is that as the discriminator is trained over the real images it becomes increasingly better at detecting the attributes present in an input image. As the generator output is directly fed to the discriminator, as the discriminator improves its detection accuracy, it compels the generator to improve its generation accuracy (a measure of how good is the synthesized image). To achieve this, we devise the following loss funtions:
+The idea is that as the discriminator is trained over the real images it becomes increasingly better at detecting the attributes present in an input image. As the generator output is directly fed to the discriminator, as the discriminator improves its detection accuracy, it compels the generator to improve its generation accuracy (a measure of how good is the synthesized image).  
+Although the negative of the accuracy measures described above ($$-S_D$$ and $$-S_G$$) can be directly used as loss functions for the discriminator and generator, respectively, in practice, [cross-entropy loss](http://neuralnetworksanddeeplearning.com/chap3.html#introducing_the_cross-entropy_cost_function) works better. So we use the following loss functions:
 
-* Discriminator loss $$ = -S_D \implies $$ by minimizing this loss we maximize the discriminator accuracy.
-* Generator loss $$ = -S_G \implies $$ by minimizing this loss we maximize the generator accuracy.
+* Discriminator loss $$ = cross\_entropy(O^{\ast}, O) $$
+* Generator loss $$ = cross\_entropy(I, O)$$
 
 
 
