@@ -68,6 +68,8 @@ Training
 
 We batch train the model using ADAM optimizer.
 
+The model, results and further analysis are explained further in the next post [here]( {{ site.baseurl }} {% link _posts/2017-01-11-image-synthesis-gan-1.md %} )
+
 Conclusion
 ----------
 
